@@ -1,0 +1,70 @@
+
+  ┃                                                                                                                                                                                                                                     Greeting
+  ┃  hi
+  ┃                                                                                                                                                                                                                                     Context
+                                                                                                                                                                                                                                        7,246 tokens
+     + Thought: 314ms                                                                                                                                                                                                                   0% used
+                                                                                                                                                                                                                                        $0.00 spent
+     Hi! What can I help you with?
+                                                                                                                                                                                                                                        LSP
+     ▣  Build · DeepSeek-V4.1-Flash · 2.8s                                                                                                                                                                                              LSPs are disabled
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ┃                                                                                                                                                                                                                                     ~/.treehouse/harness-engineering-
+  ┃                                                                                                                                                                                                                                     presentation-a32ea0/7/harness-
+  ┃                                                                                                                                                                                                                                     engineering-presentation:fm/deck-07-
+  ┃  Build · DeepSeek-V4.1-Flash Internal OVHcloud                                                                                                                                                                                      failure-modes
+  ╹▀▀▀▀▀▀▀▀��▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+   /private/tmp/fm-live-test/home/.treehouse/harness-engineering-presentation-a32ea0/7/harness-engineering-presentation                                                                                        7.2K  ctrl+p commands    • OpenCode 1.18.31
+

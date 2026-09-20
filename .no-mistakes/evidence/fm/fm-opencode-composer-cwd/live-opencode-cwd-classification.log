@@ -1,0 +1,39 @@
+== Live OpenCode 1.18.31 composer classification (real opencode TUI in a pty, 272x70) ==
+opencode: 1.18.31
+
+-- long idle cwd:branch rail (cwd under $HOME) --
+screen rows 63-67 (0-idx) as rendered by the live TUI:
+63|  ┃                                                                                                                                                                                                                                     ~/.treehouse/harness-engineering-|
+64|  ┃                                                                                                                                                                                                                                     presentation-a32ea0/7/harness-|
+65|  ┃                                                                                                                                                                                                                                     engineering-presentation:fm/deck-07-|
+66|  ┃  Build · DeepSeek-V4.1-Flash Internal OVHcloud                                                                                                                                                                                      failure-modes|
+67|  ╹▀▀▀▀▀▀▀▀��▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀|
+verdict fix : empty
+verdict base: pending
+
+-- short idle cwd:branch entirely on the footer row --
+verdict fix : empty
+verdict base: empty
+
+-- typed left-edge prose above the rail --
+verdict fix : pending
+verdict base: pending
+
+-- lone slash (first keystroke of a slash command) --
+verdict fix : pending
+
+-- lone tilde typed above the rail --
+verdict fix : pending
+
+-- space-prefixed short ~/a typed above the rail --
+verdict fix : pending
+
+-- idle worker whose cwd is OUTSIDE $HOME (rail starts with /, documented trade-off) --
+verdict fix : pending
+
+-- typed lone ~ above that outside-$HOME rail (must not assemble ~/) --
+verdict fix : pending
+
+-- extraction on the live idle pane (cursorless) --
+idle  fix : []
+idle  base: [~/.treehouse/harness-engineering- presentation-a32ea0/7/harness- engineering-presentation:fm/deck-07-]
