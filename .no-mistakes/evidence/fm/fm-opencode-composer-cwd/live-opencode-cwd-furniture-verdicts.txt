@@ -1,0 +1,19 @@
+# Live OpenCode 1.18.31 idle pane: cwd:branch furniture (tmux backend, isolated socket fm-oc-cwd-7608)
+# tmux tmux 3.7c, opencode 1.18.31
+# pane 272x70, real fm_tmux_composer_state via bin/fm-tmux-lib.sh over the shared classifier
+
+## Styled pane tail (right-aligned cwd fragments on composer rows above the Build footer)
+                                                                                                                                                                                                                                      
+                                                                                                                                                                                                                                      
+  ┃                                                                                                                                                                                                                                   
+  ┃                                                                                                                                                                                                                                     ~/.fm-oc-live.Rwd0TG/harness-
+  ┃                                                                                                                                                                                                                                     engineering-presentation-a32ea0/7/
+  ┃  Build · DeepSeek-V4.1-Flash Internal OVHcloud                                                                                                                                                                                      harness-engineering-presentation
+  ╹▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀  
+   /Users/kheimel/.fm-oc-live.Rwd0TG/harness-engineering-presentation-a32ea0/7/harness-engineering-presentation                                                                                               15.9K  ctrl+p commands    • OpenCode 1.18.31
+                                                                                                                                                                                                                                      
+
+## Verdicts
+fixed classifier  (target commit): empty
+base classifier   (base commit)  : pending
+fm_pane_input_pending (fixed)    : not-pending

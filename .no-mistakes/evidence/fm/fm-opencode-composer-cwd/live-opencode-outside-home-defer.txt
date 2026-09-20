@@ -1,0 +1,14 @@
+# Live OpenCode 1.18.31 idle pane whose cwd is OUTSIDE $HOME (adversarial boundary)
+# session directory /private/tmp/fm-oc-outside-home/... rendered as an absolute path
+
+## Pane tail
+  ┃                                                                                                                                                                                                                                     /private/tmp/fm-oc-outside-home/
+  ┃                                                                                                                                                                                                                                     aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1/
+  ┃                                                                                                                                                                                                                                     aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa2/
+  ┃  Build · DeepSeek-V4.1-Flash Internal OVHcloud                                                                                                                                                                                      aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa3
+  ╹▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀  
+   /private/tmp/fm-oc-outside-home/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa2/aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa3                                                                            15.1K  ctrl+p commands    • OpenCode 1.18.31
+                                                                                                                                                                                                                                      
+
+fixed classifier: pending
+base classifier : pending
