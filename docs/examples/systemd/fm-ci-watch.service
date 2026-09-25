@@ -1,0 +1,13 @@
+# systemd user service for bin/fm-ci-watch.sh; docs/configuration.md "CI failure watch" owns install.
+# @FM_ROOT@ is replaced by the firstmate checkout at install time.
+[Unit]
+Description=firstmate: report new failed CI runs to the owning inbox
+After=network-online.target
+
+[Service]
+Type=oneshot
+Environment=FM_HOME=@FM_ROOT@
+# gh and jq must resolve here; a user service does not read your shell profile.
+Environment=PATH=%h/.nix-profile/bin:%h/.local/bin:/usr/local/bin:/usr/bin:/bin
+ExecStart=@FM_ROOT@/bin/fm-ci-watch.sh
+TimeoutStartSec=10min

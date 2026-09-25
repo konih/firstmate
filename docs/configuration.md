@@ -623,6 +623,36 @@ The sweep must finish inside `FM_CHECK_TIMEOUT` (default 30), because a run the 
 So a budget larger than that timeout allows is cut down to what fits instead of being refused, and the cut is reported in the report line.
 A budget that is not a whole number from 1 to 120 is still refused outright.
 
+## CI failure watch (config/ci-watch-scope, config/ci-watch-inbox-root, config/ci-watch-inbox-map)
+
+[`bin/fm-ci-watch.sh`](../bin/fm-ci-watch.sh) turns a new failed GitHub Actions run on a watched repository's default branch into an inbox entry, so a red default branch reaches the supervisor without any lane polling for it.
+[`bin/fm-ci-rescan.sh`](../bin/fm-ci-rescan.sh) is its one-shot companion: a Markdown survey of failure rate, time-to-green, currently red workflows, and flaky candidates across the same scope.
+Both are read-only against GitHub, and each script's header owns its flags, state files, and delivery contract.
+
+The configuration is local and gitignored, and nothing is watched until it exists:
+
+- `config/ci-watch-scope`: one scope token per line, `org:<owner>` for every non-archived repository of an owner or `<owner>/<name>` for one repository; `FM_CI_SCOPE` or positional arguments override it ([`bin/fm-ci-lib.sh`](../bin/fm-ci-lib.sh) owns the token grammar).
+- `config/ci-watch-inbox-root`: the directory holding per-repository checkouts, whose `<name>/agent-context/INBOX.md` receives that repository's entries; `FM_CI_INBOX_ROOT` overrides it.
+- `config/ci-watch-inbox-map`: optional `<owner>/<name> <path>` lines for a repository whose checkout is named differently.
+
+Every delivery also queues a note through `bin/fm-inbox.sh note`, which wakes firstmate; `--no-note` turns that off.
+
+The watcher is made to run on a schedule outside any agent session.
+[`docs/examples/systemd/`](examples/systemd/) carries a user service and a 15-minute timer; install them from the firstmate checkout that is `FM_HOME`:
+
+```sh
+mkdir -p ~/.config/systemd/user
+for u in service timer; do
+  sed "s|@FM_ROOT@|$PWD|g" docs/examples/systemd/fm-ci-watch.$u > ~/.config/systemd/user/fm-ci-watch.$u
+done
+systemctl --user daemon-reload
+systemctl --user start fm-ci-watch.service   # first run: records history, reports only the last 24 hours
+systemctl --user enable --now fm-ci-watch.timer
+```
+
+Adjust the unit's `PATH` line when `gh` or `jq` live elsewhere, and check a run with `journalctl --user -u fm-ci-watch.service`.
+Where systemd is absent, the equivalent cron line is `*/15 * * * * FM_HOME=<checkout> <checkout>/bin/fm-ci-watch.sh`.
+
 ## Mail plane (.env)
 
 The mail plane (bin/fm-mail.sh) reads unseen IMAP messages and sends one SMTP message.
