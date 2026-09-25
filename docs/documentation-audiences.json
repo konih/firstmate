@@ -345,6 +345,14 @@
       "audience": "operator-example"
     },
     {
+      "path": "docs/examples/systemd/fm-ci-watch.service",
+      "audience": "operator-example"
+    },
+    {
+      "path": "docs/examples/systemd/fm-ci-watch.timer",
+      "audience": "operator-example"
+    },
+    {
       "path": "docs/examples/watched-tools.json",
       "audience": "operator-example"
     },
